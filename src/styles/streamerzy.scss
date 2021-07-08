@@ -1,0 +1,72 @@
+.streamerzy {
+    h1 {
+        text-align: center;
+        margin-top: 126px;
+        margin-bottom: 48px;
+    }
+    .streamers {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        h2 {
+            margin-top: 24px;
+            margin-bottom: 48px;
+            font-weight: bold;
+            font-size: $font-size-heading;
+        }
+
+        &__item {
+            width: 20%;
+            padding: 0 12px;
+        }
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .streamerzy{
+        .streamers{
+            &__item {
+                width: 50%;
+            }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .streamerzy{
+        h1{
+            margin-top: 100px;
+            margin-bottom: 40px;
+            font-size: 42px;
+        }
+    }
+}
+
+@media screen and(max-width: 575px) {
+    .streamerzy{
+        h1{
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 33px;
+        }
+        .streamers{
+            h2{
+                margin-top: 15px;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}

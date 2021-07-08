@@ -1,0 +1,188 @@
+.usefull-links {
+    background-color: #fff;
+    padding-bottom: 42px;
+    .logo {
+        padding-bottom: 40px;
+        padding-top: 56px;
+        width: 17%;
+    }
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: $font-size-body;
+        margin: 0px;
+    }
+    .dc {
+        width: 12px;
+        height: 12px;
+        padding: 0px;
+        margin-right: 8px;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    .dot-secondary {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        margin-right: 14px;
+        background-color: $color-secondary;
+    }
+    .dot-primary {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        margin-right: 14px;
+        background-color: $color-primary;
+    }
+    .double-p {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .button-right {
+        margin-left: 32px;
+        width: 116px;
+    }
+    .right-content-1 {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .right-content-2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .font-weight-medium {
+        font-weight: 500;
+    }
+    .specific {
+        margin-left: 20px;
+    }
+    .btn {
+        font-size: $font-size-body;
+        height: 38px;
+    }
+    .right-p{
+        line-height: 36px;
+    }
+}
+
+@media screen and(max-width: 1199px) {
+    .usefull-links{
+        .logo{
+            width: 20%;
+        }
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .usefull-links {
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .right-p{
+            line-height: 32px;
+        }
+        .dc {
+            width: 8px;
+            height: 8px;
+            margin-right: 6px;
+        }
+        .dot-secondary{
+            margin-right: 10px;
+            width: 4px;
+            height: 4px;
+        }
+        .dot-primary{
+            margin-right: 10px;
+            width: 4px;
+            height: 4px;
+        }
+        .specific {
+            margin-left: 16px;
+        }
+        .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            height: 35px;
+        }
+        .button-right{
+            width: 100px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .right-content-1{
+            margin-bottom: 10px;
+        }
+        .double-p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .logo{
+            padding-bottom: 25px;
+            padding-top: 40px;
+            width: 22%;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .usefull-links{
+        .right-content-1{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .right-content-2{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .button-right{
+            margin-left: 0px;
+        }
+        .right-p{
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and(max-width: 530px) {
+    .usefull-links{
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .main-content{
+            justify-content: space-evenly;
+        }
+        .right-content{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .right-content-1{
+            margin-bottom: 0px;
+        }
+        .step3{
+            text-align: center;
+        }
+    }
+}

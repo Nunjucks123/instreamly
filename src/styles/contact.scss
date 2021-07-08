@@ -1,0 +1,108 @@
+.contact {
+    padding-top: 126px;
+    padding-bottom: 152px;
+    h2 {
+        margin-bottom: 64px;
+        font-size: 28px;
+    }
+    .steps-wrapper {
+        display: flex;
+        .step {
+            width: 20%;
+        }
+        .separator {
+            width: 86px;
+            height: 2px;
+            background-color: $color-secondary;
+            margin: auto;
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+        }
+        .step-caption {
+            margin-top: 32px;
+            max-width: 180px;
+            .btn {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width: 1999px){
+    .contact{
+        h2{
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .square {
+            width: 40px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+        .step-caption{
+            margin-top: 26px;
+            .btn{
+                font-size: 14px;
+                height: 40px;
+                padding-left: 24px;
+                padding-right: 28px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+    
+@media screen and(max-width: 991px){
+    .contact{
+        .steps-wrapper{
+            flex-direction: column;
+            .step{
+                display: flex;
+                width: 100%;
+            }
+            .step-header{
+                flex-direction: column;
+                padding-right: 30px;
+            }
+            .separator{
+                width: 2px;
+                height: 86px;
+                margin: 15px 0
+            }
+            .step-caption{
+                display: flex;
+                margin-top: 0px;
+                max-width: 100%;
+                p{
+                    order: 0;
+                    max-width: 180px;
+                }
+                .btn{
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 415px){
+    .contact{
+        .step-caption{
+            flex-direction: column;
+            .btn{
+                &-primary{
+                    width: 142px;
+                }
+                &-secondary{
+                    width: 102px;
+                }
+            }
+        }
+    }
+}

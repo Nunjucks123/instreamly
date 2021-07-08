@@ -1,0 +1,129 @@
+.main-header {
+    box-shadow: 0px 3px 6px #00000014;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 173px;
+    nav {
+        display: flex;
+        align-items: center;
+        a {
+            text-decoration: none;
+            margin-right: 20px;
+            color: #40396f;
+            font-size: $font-size-body;
+        }
+    }
+    .btn {
+        font-size: $font-size-body;
+        height: 32px;
+    }
+    .btn-primary {
+        margin-left: 20px;
+    }
+    .btn-secondary {
+        margin-left: auto;
+    }
+    .separator {
+        height: 39px;
+        background: #767197;
+        display: block;
+        width: 1px;
+        margin-left: 48px;
+        margin-right: 30px;
+    }
+    .wrapper {
+        display: flex;
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .main-header {
+        padding: 1rem 0;
+        position: relative;
+        margin-bottom: 70px;
+        .wrapper{
+            flex-wrap: wrap;
+        }
+        nav{
+            order: 2;
+            width: 296px;
+            margin-top: 1rem;
+        }
+        img{
+            width: 278px;
+        }
+        .btn-primary{
+            order: 3;
+            margin-left: auto;
+            width: 134px;
+            padding: 0;
+        }
+        .separator{
+            position: absolute;
+            margin-left: 295px;
+            margin-right: 0;
+            height: 76px;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .main-header {
+        padding: 5px 0;
+        margin-bottom: 45px;
+        img{
+            width: 217px;
+        }
+        nav{
+            margin-top: 0px;
+            width: 233px;
+            a{
+                font-size: 11px;
+                margin-right: 16px;
+            }
+        }
+        .btn{
+            font-size: 11px;
+            height: 26px;
+        }
+        .btn-secondary{
+            margin-left: auto;
+            margin-bottom: 5px;
+        }
+        .btn-primary{
+            width: 119px;
+        }
+        .separator{
+            margin-left: 230px;
+            height: 55px;
+        }
+    }
+}
+
+@media screen and(max-width: 400px) {
+    .main-header{
+        margin-bottom: 30px;
+        img{
+            width: 190px;
+        }
+        nav{
+            width: 198px;
+            a{
+                font-size: 10px;
+                margin-right: 10px;
+            }
+        }
+        .separator{
+            margin-left: 200px;
+            height: 52px;
+        }
+        .btn{
+            font-size: 10px;
+            height: 24px;
+            &-primary{
+                width: 114px;
+            }
+        }
+    }
+}

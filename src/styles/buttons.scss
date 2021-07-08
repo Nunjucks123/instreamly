@@ -1,0 +1,22 @@
+.btn-primary{
+    background-color: $color-primary;
+    &:hover{
+        background-color: $color-primary-hover;
+    }
+}
+
+.btn{
+    font-size: 18px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none;
+}
+
+.btn-secondary{
+    background-color: $color-secondary;
+    &:hover{
+        background-color: $color-secondary-hover;
+    }
+}

@@ -1,0 +1,207 @@
+.QandA {
+    h1 {
+        padding-bottom: 52px;
+        padding-top: 126px;
+        margin: 0px;
+    }
+    .header {
+        background-color: #fff;
+        margin-top: 24px;
+        box-shadow: 0px 3px 10px #00000014;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    h3 {
+        font-size: $font-size-medium;
+        font-weight: bold;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 48px;
+        margin: 0px;
+    }
+    .list {
+        background-color: #fff;
+        box-shadow: 0px 20px 30px #00000014;
+        padding-bottom: 8px;
+        padding-top: 32px;
+        padding-left: 48px;
+        padding-right: 22px;
+        display: none;
+        &.open {
+            display: block;
+        }
+    }
+    li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    .square {
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+        margin-right: 12px;
+    }
+    p {
+        margin: 0px;
+    }
+    ul {
+        padding: 0px;
+    }
+    .QandA-footer {
+        display: flex;
+        padding-top: 86px;
+        align-items: center;
+        padding-bottom: 86px;
+    }
+    .btn-secondary {
+        margin-left: 48px;
+    }
+    h2 {
+        margin-left: auto;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .plus {
+        font-size: 40px;
+        font-weight: 300;
+        padding-right: 48px;
+    }
+    span:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .QandA {
+        .btn {
+            font-size: 13px;
+            height: 40px;
+            padding-left: 26px;
+            padding-right: 26px;
+            &-secondary {
+                margin-left: 30px;
+            }
+        }
+        h1 {
+            padding-bottom: 20px;
+            padding-top: 60px;
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .square {
+            height: 12px;
+            width: 12px;
+            min-width: 12px;
+            margin-right: 8px;
+        }
+
+        h3 {
+            font-size: 14px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 26px;
+        }
+        .list {
+            padding-bottom: 1px;
+            padding-top: 15px;
+            padding-left: 26px;
+        }
+        li {
+            margin-bottom: 14px;
+        }
+        .plus {
+            font-size: 31px;
+            padding-right: 26px;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .QandA {
+        .header {
+            margin-top: 12px;
+        }
+        h1 {
+            padding-bottom: 0px;
+            padding-top: 40px;
+            font-size: 26px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        .btn {
+            font-size: 11px;
+            height: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+            &-secondary {
+                margin-left: 20px;
+            }
+        }
+        .QandA-footer {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+    }
+}
+
+@media screen and(max-width: 530px) {
+    .QandA {
+        .QandA-footer {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h2 {
+                margin: 0px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .btn-primary {
+                order: 1;
+            }
+            .btn-secondary {
+                order: 2;
+                margin-left: 10px;
+                width: 94px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 508px) {
+    .QandA {
+        h1 {
+            padding-top: 30px;
+            font-size: 22px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .list {
+            padding-top: 12px;
+            padding-left: 22px;
+        }
+        p {
+            font-size: 11px;
+        }
+        h3 {
+            font-size: 13px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 22px;
+        }
+    }
+}

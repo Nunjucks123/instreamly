@@ -1,0 +1,211 @@
+.prizes {
+    background-color: #ffffff;
+    margin-top: 105px;
+    padding-top: 76px;
+    padding-bottom: 86px;
+    p {
+        font-size: $font-size-medium;
+        margin-bottom: 0px;
+    }
+    h1 {
+        margin-bottom: 42px;
+    }
+    .money {
+        display: flex;
+        justify-content: space-between;
+        .prizepool {
+            color: $color-primary;
+            font-size: 95px;
+            font-weight: bold;
+        }
+        .step-caption{
+            display: flex;
+            justify-content: space-between;
+            width: 65%;
+        }
+        .prize {
+            color: $color-secondary;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .place {
+            font-size: $font-size-medium;
+            text-align: center;
+            margin-top: 14px;
+        }
+        .step {
+            text-align: center;
+            margin-top: 18px;
+        }
+    }
+
+    .plus {
+        font-size: 112px;
+        line-height: 146px;
+        text-align: center;
+        color: $color-secondary;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .i {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 24px;
+            font-size: 70px;
+        }
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+@media screen and(max-width: 1229px) {
+    .prizes{
+        .money{
+            .prizepool{
+                font-size: 81px;
+            }
+            .place{
+                margin-top: 0px;
+            }
+            .prize{
+                font-size: 35px;
+            }
+            .step-caption{
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1199px) {
+    .prizes {
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .money {
+            .prizepool {
+                font-size: 75px;
+            }
+            .prize {
+                font-size: 30px;
+            }
+        }
+        .i {
+            i {
+                margin-right: 5px;
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .prizes {
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .money {
+            .prizepool {
+                font-size: 65px;
+            }
+            .step-caption{
+                flex-wrap: wrap;
+                width: 55%;
+                .prize {
+                    font-size: 26px;
+                }
+                .place {
+                    margin-top: 3px;
+                    font-size: 14px;
+                }
+                .step {
+                    margin-top: 14px;
+                    width: 50%;
+                }
+            }
+
+        }
+        .plus {
+            font-size: 83px;
+            line-height: 130px;
+        }
+        .i {
+            flex-direction: column;
+            text-align: center;
+            i {
+                font-size: 50px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .prizes{
+        h1{
+            font-size: 31px;
+            margin-bottom: 10px;
+        }
+        .money{
+            .prizepool{
+                font-size: 55px;
+            }
+            .step{
+                .prize{
+                    font-size: 23px;
+                }
+                .place{
+                    font-size: 13px;
+                }
+            }
+        }
+        .i{
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 489px) {
+    .prizes{
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-left: 15px;
+            }
+        }
+        .money{
+            flex-direction: column;
+            .prizepool{
+                text-align: center;
+            }
+            .step-caption{
+                justify-content: center;
+                width: 100%;
+            }
+        }
+        .info{
+            flex-wrap: wrap;
+            .i{
+                width: 50%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
